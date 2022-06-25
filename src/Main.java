@@ -1,7 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("ütü"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Palindrom olup olmadığını merak ettiğiniz kelimeyi giriniz: ");
+        String str = scanner.next();
+        if(isPalindrome(str)){
+            System.out.println("Girilen kelime palindrom");
 
+        }
+        else {
+            System.out.println("Girilen kelime palindrom değil");
+
+        }
     }
 
     public static boolean isPalindrome(String str) {
